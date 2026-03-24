@@ -180,7 +180,7 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.25; font-weight: 700; color: var(--clr-primar
   flex-shrink: 0;
 }
 .logo img {
-  height: 48px;
+  height: 68px;
   width: auto;
 }
 .logo-fallback {
@@ -936,7 +936,7 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.25; font-weight: 700; color: var(--clr-primar
   :root { --sec-pad: 48px; --header-h: 68px; }
 
   /* Nav mobile */
-  .main-nav, .lang-switcher {
+  .main-nav {
     display: none;
     flex-direction: column;
     gap: 0;
@@ -949,18 +949,9 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.25; font-weight: 700; color: var(--clr-primar
     padding: 12px 16px 16px;
     z-index: 998;
   }
-  .main-nav.open, .lang-switcher { display: flex; }
-  .nav-mobile-open .main-nav   { display: flex; }
-  .nav-mobile-open .lang-switcher {
-    display: flex;
-    flex-direction: row;
-    top: calc(var(--header-h) + 4px + /* nav items */ 240px);
-    padding-top: 10px;
-    border-top: 1px solid var(--clr-border);
-    border-left: none;
-    margin-left: 0;
-    padding-left: 16px;
-  }
+  /* lang-switcher volledig verborgen in de header op mobiel — zit al in het mobiele menu */
+  .lang-switcher { display: none !important; }
+  .main-nav.open { display: flex; }
   .main-nav a { padding: 12px 8px; font-size: 1rem; }
   .nav-toggle { display: flex; }
 
