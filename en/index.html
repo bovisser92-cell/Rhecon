@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RheCon B.V. — Management · Structures · Engineering · Trading</title>
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
   <meta name="description" content="RheCon B.V. is your total partner in project management, construction, engineering and trading. From industrial buildings to residential construction and water engineering." />
   <link rel="canonical" href="https://www.rhecon.nl/en/" />
 
@@ -264,7 +267,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; <span id="year"></span> RheCon B.V. All rights reserved.</span>
+        <span>&copy; <span id="year"></span> RheCon B.V. All rights reserved.</span> &nbsp;|&nbsp; <a href="../en/privacy-policy.html">Privacy Policy</a>
         <div style="display:flex;gap:12px;"><a href="../index.html">Nederlands</a><a href="../es/index.html">Español</a></div>
       </div>
     </div>
@@ -272,5 +275,23 @@
 
   <script src="../assets/js/main.js"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <!-- Cookie consent banner (GDPR) -->
+  <div class="cookie-banner hidden" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie notice">
+    <div class="container cookie-banner-inner">
+      <div class="cookie-text">
+        <strong>We use cookies</strong>
+        <p>
+          This website uses functional cookies that are necessary for the site to work correctly.
+          We do not place tracking or advertising cookies without your consent.
+          Read more in our <a href="../en/privacy-policy.html">privacy policy</a>.
+        </p>
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-btn cookie-btn--decline" id="cookieDecline" type="button">Essential only</button>
+        <button class="cookie-btn cookie-btn--accept"  id="cookieAccept"  type="button">Accept all</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -121,3 +121,30 @@
   });
 
 })();
+
+  /* ─── 7. Cookie consent (AVG/GDPR) ─── */
+  (function () {
+    var COOKIE_KEY = 'rhecon_cookie_consent';
+    var banner = document.getElementById('cookieBanner');
+    if (!banner) return;
+
+    // If consent already given, hide immediately
+    if (localStorage.getItem(COOKIE_KEY)) {
+      banner.classList.add('hidden');
+      return;
+    }
+
+    // Show banner
+    banner.classList.remove('hidden');
+
+    function setConsent(value) {
+      try { localStorage.setItem(COOKIE_KEY, value); } catch(e) {}
+      banner.classList.add('hidden');
+    }
+
+    var btnAccept  = document.getElementById('cookieAccept');
+    var btnDecline = document.getElementById('cookieDecline');
+
+    if (btnAccept)  btnAccept.addEventListener('click',  function() { setConsent('accepted'); });
+    if (btnDecline) btnDecline.addEventListener('click', function() { setConsent('declined'); });
+  })();

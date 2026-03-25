@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RheCon B.V. — Gestión · Estructuras · Ingeniería · Comercio</title>
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
   <meta name="description" content="RheCon B.V. es su socio total en gestión de proyectos, construcción, ingeniería y comercio. Desde naves industriales hasta construcción residencial e ingeniería hidráulica." />
   <link rel="canonical" href="https://www.rhecon.nl/es/" />
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -181,12 +184,30 @@
         <div class="footer-col"><h4>Servicios</h4><ul><li><a href="servicios.html#gestion">Gestión</a></li><li><a href="servicios.html#estructuras">Estructuras</a></li><li><a href="servicios.html#ingenieria">Ingeniería</a></li><li><a href="servicios.html#comercio">Comercio</a></li></ul></div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; <span id="year"></span> RheCon B.V. Todos los derechos reservados.</span>
+        <span>&copy; <span id="year"></span> RheCon B.V. Todos los derechos reservados.</span> &nbsp;|&nbsp; <a href="../es/politica-de-privacidad.html">Política de Privacidad</a>
         <div style="display:flex;gap:12px;"><a href="../index.html">Nederlands</a><a href="../en/index.html">English</a></div>
       </div>
     </div>
   </footer>
   <script src="../assets/js/main.js"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <!-- Banner de cookies (GDPR) -->
+  <div class="cookie-banner hidden" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+    <div class="container cookie-banner-inner">
+      <div class="cookie-text">
+        <strong>Utilizamos cookies</strong>
+        <p>
+          Este sitio web utiliza cookies funcionales necesarias para el correcto funcionamiento del sitio.
+          No colocamos cookies de seguimiento o publicidad sin su consentimiento.
+          Más información en nuestra <a href="../es/politica-de-privacidad.html">política de privacidad</a>.
+        </p>
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-btn cookie-btn--decline" id="cookieDecline" type="button">Solo esenciales</button>
+        <button class="cookie-btn cookie-btn--accept"  id="cookieAccept"  type="button">Aceptar todo</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
